@@ -1,6 +1,6 @@
-const React = require('react')
-const { useState } = require('react')
-const { Text, Color } = require('scenegraph')
+import React from 'react'
+import { useState } from 'react'
+import { Text, Color } from 'scenegraph'
 
 const HelloForm = ({ selection, dialog }) => {
 
@@ -56,4 +56,4 @@ const HelloForm = ({ selection, dialog }) => {
   )
 }
 
-module.exports = HelloForm
+export default HelloForm

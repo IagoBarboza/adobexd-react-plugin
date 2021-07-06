@@ -1,8 +1,7 @@
-require('./react-shim')
-const React = require('react')
-const ReactDOM = require('react-dom')
-
-const App = require('./HelloForm.jsx')
+import './react-shim.js'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './HelloForm.jsx'
 
 let dialog
 
@@ -17,8 +16,6 @@ const main = (selection) => {
   return dialog.showModal()
 }
 
-module.exports = {
-  commands: {
-    main
-  }
+export const commands = {
+  main
 }
