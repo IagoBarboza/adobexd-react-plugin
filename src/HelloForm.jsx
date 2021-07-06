@@ -8,7 +8,6 @@ const HelloForm = ({ selection, dialog }) => {
 
   const onInputChange = (e) => {
     setName(e.target.value)
-    console.log('onInputChanged()')
   }
 
   const onDoneClick = () => {
