@@ -1,25 +1,33 @@
 {
-  "id": "{PLUGIN_ID}",
+  "manifestVersion": 4,
+  "id": "123456",
   "name": "AdobeXD React Plugin",
   "version": "1.0.0",
-  "description": "AdobeXD React Plugin",
-  "summary": "An AdobeXD plugin built with React",
-  "languages": ["en"],
-  "author": "Iago Barboza",
-  "helpUrl": "https://github.com/iagobarboza/adobexd-react-plugin",
   "host": {
     "app": "XD",
-    "minVersion": "13.0"
+    "minVersion": "36.0"
   },
-  "uiEntryPoints": [
+  "entryPoints": [
     {
-      "type": "menu",
-      "label": "Quick Start - React",
-      "commandId": "main",
+      "type": "command",
+      "id": "main",
+      "label": {
+        "default": "React Plugin"
+      },
       "shortcut": {
         "mac": "Cmd+Alt+5",
         "windows": "Ctrl+Alt+5"
       }
+    }
+  ],
+  "icons": [
+    {
+      "width": 24,
+      "height": 24,
+      "path": "icons/icon.png",
+      "scale": [1,2],
+      "theme": ["all"],
+      "species": ["pluginList"]
     }
   ]
 }
